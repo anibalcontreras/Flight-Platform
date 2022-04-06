@@ -1,0 +1,3 @@
+id_costo,Ruta.id_ruta,Aeronave.codigo_internacional,Aeronave.peso,costo
+1,1,ABCDEFG,10.3,100
+2,3,ZDERGAS,112,1000
