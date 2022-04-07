@@ -1,4 +1,4 @@
-id_ruta,Aerodromo.codigo_icao,Aerodromo.codigo_icao
-1,SCEL,SAEZ
-3,SAEZ,SCEL
-2,KMIA,SCEL
+id_ruta,Aerodromo.codigo_icao,Aerodromo.codigo_iata
+1,SCEL,MIA
+3,SAEZ,SCL
+2,KMIA,SCL

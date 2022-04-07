@@ -1,2 +1,2 @@
-numero_vuelo,fecha_salida,fecha_llegada,velocidad,altitud,Aeronave.codigo_internacional,Aerodromo.codigo_icao,Aerodromo.codigo_icao,Piloto.numero_pasaporte,Piloto.numero_pasaporte,estado
-LAN123,08/03/2023,09/03/2023,885,10,ABCDEFG,SCEL,SAEZ,O900003,O800001,PENDIENTE
+numero_vuelo,fecha_salida,fecha_llegada,velocidad,altitud,Aeronave.codigo_internacional,Aerodromo.codigo_icao,Aerodromo.codigo_icao,Piloto.numero_pasaporte,Copiloto.numero_pasaporte,estado
+LAN123,08/03/2023,09/03/2023,885,10,ABCDEFG,SCEL,EZE,O900003,O800001,PENDIENTE
