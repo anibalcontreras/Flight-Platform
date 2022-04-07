@@ -1,4 +1,4 @@
-id_ticket,numero_asiento,clase,comida,maletas,Reservas.id_reserva,Costo.id_costo,Costo.costo
+id_ticket,numero_asiento,numero_vuelo,clase,comida,maletas,Reservas.id_reserva,Costo.id_costo,Costo.costo
 1,2C,LAN456,Ejecutivo,NO,SI,L3O4D,1,100
 2,3C,LAN456,Ejecutivo,NO,SI,L3O4D,1,100
 3,3B,LAN456,Ejecutivo,NO,SI,L3R3F,1,100
