@@ -1,4 +1,0 @@
-id_ticket,numero_asiento,clase,comida,maletas,Reservas.id_reserva,Costo.id_costo,Costo.costo
-1,2C,Ejecutivo,NO,SI,L3O4D,1,100
-2,3C,Ejecutivo,SI,SI,L3O4D,1,100
-3,3B,Ejecutivo,SI,SI,L3R3F,1,100

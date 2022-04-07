@@ -1,0 +1,4 @@
+numero_vuelo,fecha_salida,fecha_llegada,velocidad,altitud,Aeronave.codigo_internacional,Aerodromo.codigo_icao,Aerodromo.codigo_icao,Piloto.numero_pasaporte,Copiloto.numero_pasaporte,estado
+LAN123,08/03/2023,09/03/2023,885,10,ABCDEFG,SCEL,SAEZ,O900003,O800001,PENDIENTE
+LAN456,10/04/2023,11/04/2023,900,15,ZDERGAS,SCEL,KMIA,O900003,O800001,PUBLICADO
+LAN789,13/04/2023,14/04/2023,900,15,ZDERGAS,SCEL,KMIA,O900003,O800001,PUBLICADO
