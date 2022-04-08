@@ -1,1 +1,5 @@
-# ProyectoIIC2413-Grupo105
+# PROYECTO IIC2413 :computer:
+
+Integrantes:
+- Aníbal Contreas
+- Roberto Orrego
