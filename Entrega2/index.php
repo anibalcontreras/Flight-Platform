@@ -18,15 +18,28 @@
   <br>
 
   <h3 align="center"> ¿Quieres ver los vuelos de una aerolínea a un aerodromo?</h3>
-  <h3 align="center"> Escribe el código ICAO y la aerolínea </h3>
+  <h3 align="center"> Escribe el código ICAO y selecciona la aerolínea </h3>
+
+  <?php
+  require("config/conexion.php");
+  $result = $db -> prepare("SELECT DISTINCT nombre_compania FROM grupo105e2.public.companias;");
+  $result -> execute();
+  $dataCollected = $result -> fetchAll();
+  ?>
+
 
   <form align="center" action="queries/consulta2.php" method="post">
     Codigo ICAO:
     <input type="text" name="codigo_icao_elegido">
-    <br/>
-    <!-- TIENE QUE SER SCROLL DE AEROLINEA -->
-    Aerolínea: 
-    <input type="text" name="aerolinea_elegida">
+    <br/><br/>
+    Seleccionar Aerolínea:
+    <select name="aerolinea">
+      <?php
+      foreach ($dataCollected as $d) {
+        echo "<option value=$d[0]>$d[0]</option>";
+      }
+      ?>
+    </select>
     <br/><br/>
     <input type="submit" value="Buscar">
   </form>

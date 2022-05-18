@@ -772,4 +772,3 @@ reserva_id,codigo_reserva,numero_ticket,vuelo_id,pasaporte_comprador,nombre_comp
 1642,QAF4466-1642,994,126,V79731274,Corey Elliott,Venezolana,04-10-1979,29,Ejecutiva,FALSO,V79731274,Corey Elliott,Venezolana,04-10-1979
 3543,LAW6318-3543,9017,96,N55362278,Laura Marshall,Chilena,19-05-1991,21,Primera clase,FALSO,R10584802,John Luna,Chilena,04-11-1983
 1007,COG3144-1007,6779,98,Z09262256,Joseph Wilson,Uruguaya,28-07-1993,29,Primera clase,FALSO,S03830222,Amanda Andrade,Italiana,06-11-1993
-,,,vuelo_id,,,,,,,,,,,
