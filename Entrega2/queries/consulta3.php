@@ -6,6 +6,7 @@
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
     require("../config/conexion.php");
         $codigo_reserva = $_POST["codigo_reserva_elegido"];
+        $codigo_reserva = strtoupper($codigo_reserva);
         $query = "SELECT numero_ticket, pasaporte_pasajero, costos.valor, codigo_reserva
         FROM reservas, grupo105e2.public.tickets, vuelos, grupo105e2.public.aeronaves, grupo105e2.public.rutas, costos
         WHERE tickets.reserva_id = reservas.reserva_id

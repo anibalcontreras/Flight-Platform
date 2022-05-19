@@ -6,6 +6,7 @@
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
     require("../config/conexion.php");
     $icao = $_POST["codigo_icao_elegido"];
+    $icao = strtoupper($icao);
     $var = $_POST["aerolinea"];
     $query = "SELECT vuelos.vuelo_id, aerodromo_salida_id, aerodromo_llegada_id, estado, nombre_compania
     FROM aerodromos, grupo105e2.public.companias, grupo105e2.public.vuelos

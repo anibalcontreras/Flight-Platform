@@ -30,7 +30,9 @@
 
   <form align="center" action="queries/consulta2.php" method="post">
     Codigo ICAO:
-    <input type="text" name="codigo_icao_elegido">
+    <input type="text" name="codigo_icao_elegido"
+    required
+          minlength="4" maxlength="4">
     <br/><br/>
     Seleccionar Aerolínea:
     <select name="aerolinea">
@@ -53,7 +55,9 @@
 
   <form align="center" action="queries/consulta3.php" method="post">
     Codigo de Reserva:
-    <input type="text" name="codigo_reserva_elegido">
+    <input type="text" name="codigo_reserva_elegido"
+    required
+          minlength="12" maxlength="12">
     <br/><br/>
     <input type="submit" value="Buscar">
   </form>
@@ -78,7 +82,8 @@
 
   <form align="center" action="queries/consulta5.php" method="post">
     Aerolínea:
-    <input type="text" name="aerolinea_elegida">
+    <input type="text" name="aerolinea_elegida"
+    required>
     <br/><br/>
     <input type="submit" value="Buscar">
   </form>

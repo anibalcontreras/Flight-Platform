@@ -6,7 +6,7 @@
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
     require("../config/conexion.php");
     
-    $query = "SELECT vuelo_id, codigo_vuelo, estado FROM vuelos WHERE estado = 'pendiente';";
+    $query = "SELECT codigo_vuelo, estado FROM vuelos WHERE estado = 'pendiente';";
 
     $result = $db -> prepare($query);
     $result -> execute();
@@ -14,7 +14,6 @@
     ?>
     <table>
       <tr>
-        <th>ID</th>
         <th>Código</th>
         <th>Estado</th>
       </tr>
@@ -24,7 +23,6 @@
           echo "<tr>
                   <td>$d[0]</td>
                   <td>$d[1]</td>
-                  <td>$d[2]</td>
                   </tr>";
           }
       ?>
