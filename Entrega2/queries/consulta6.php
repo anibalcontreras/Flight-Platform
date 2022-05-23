@@ -57,12 +57,14 @@
     $result -> execute();
     $data = $result -> fetchAll();
     ?>
-    <table>
-      <tr>
-        <th>Código Aerolínea</th>
-        <th>Nombre Aerolínea</th>
-        <th>Porcentaje (en Decimales)</th>
-      </tr>
+    <table class="table table-striped table-bordered table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>Código Aerolínea</th>
+          <th>Nombre Aerolínea</th>
+          <th>Porcentaje (en Decimales)</th>
+        </tr>
+      </thead>
   
       <?php
         foreach ($data as $d) {
@@ -76,4 +78,4 @@
       
   </table>
 
-<?php include('../templates/footer.html'); ?>
+<center><?php include('../templates/footer.html'); ?></center>

@@ -31,21 +31,25 @@
     $result -> execute();
     $data = $result -> fetchAll();
     ?>
-    <table>
-      <tr>
-        <th>Aerolínea</th>
-        <th>Maxima Cantidad Tickets</th>
-      </tr>
+    <table class="table table-striped table-bordered table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>Aerolínea</th>
+          <th>Maximos Compradores</th>
+          <th>Cantidad de Tickets</th>
+        </tr>
+      </thead>
   
       <?php
         foreach ($data as $d) {
           echo "<tr>
                   <td>$d[0]</td>
                   <td>$d[1]</td>
+                  <td>$d[2]</td>
                   </tr>";
           }
       ?>
       
   </table>
 
-<?php include('../templates/footer.html'); ?>
+<center><?php include('../templates/footer.html'); ?></center>

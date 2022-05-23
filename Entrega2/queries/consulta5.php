@@ -6,6 +6,7 @@
     #Llama a conexión, crea el objeto PDO y obtiene la variable $db
     require("../config/conexion.php");
         $aerolinea = $_POST["aerolinea_elegida"];
+        $aerolinea = strtoupper($aerolinea);
         $query = "SELECT DISTINCT estado, COUNT(estado) as cantidadVuelos
         FROM grupo105e2.public.vuelos, grupo105e2.public.companias
         WHERE vuelos.codigo_compania = companias.codigo_compania
@@ -15,11 +16,13 @@
         $result -> execute();
         $data = $result -> fetchAll();
     ?>
-    <table>
-      <tr>
-        <th>Estado</th>
-        <th>Cantidad Vuelos</th>
-      </tr>
+    <table class="table table-striped table-bordered table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>Estado</th>
+          <th>Cantidad Vuelos</th>
+        </tr>
+      </thead>
   
       <?php
         foreach ($data as $d) {
@@ -32,4 +35,4 @@
       
   </table>
 
-<?php include('../templates/footer.html'); ?>
+<center><?php include('../templates/footer.html'); ?></center>

@@ -20,7 +20,8 @@
     $dataCollected = $result -> fetchAll();
     ?>
 
-<table>
+<table class="table table-striped table-bordered table-hover">
+  <thead class="table-dark">
     <tr>
       <th>ID vuelo</th>
       <th>Id aeródromo salida</th>
@@ -28,7 +29,8 @@
       <th>Estado</th>
       <th>Nombre compania</th>
     </tr>
-  <?php
+  </thead>
+<?php
   foreach ($dataCollected as $d) {
     echo "<tr>
             <td>$d[0]</td>
@@ -42,4 +44,4 @@
   </table>
 
     
-<?php include('../templates/footer.html'); ?>
+<center><?php include('../templates/footer.html'); ?></center>

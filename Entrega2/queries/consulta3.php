@@ -21,13 +21,15 @@
         $result -> execute();
         $data = $result -> fetchAll();
     ?>
-    <table>
-      <tr>
-        <th>Numero Ticket</th>
-        <th>Pasaporte Pasajero</th>
-        <th>Valor</th>
-        <th>Codigo Reserva</th>
-      </tr>
+    <table class="table table-striped table-bordered table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>Numero Ticket</th>
+          <th>Pasaporte Pasajero</th>
+          <th>Valor</th>
+          <th>Codigo Reserva</th>
+        </tr>
+      </thead>
   
       <?php
         foreach ($data as $d) {
@@ -42,4 +44,4 @@
       
   </table>
 
-<?php include('../templates/footer.html'); ?>
+<center><?php include('../templates/footer.html'); ?></center>
