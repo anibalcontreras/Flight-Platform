@@ -1,5 +1,1 @@
-# PROYECTO IIC2413 :computer:
-
-Integrantes:
-- Aníbal Contreas
-- Roberto Orrego
+# IIC2413 Project :computer:
